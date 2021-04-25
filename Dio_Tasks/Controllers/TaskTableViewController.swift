@@ -30,6 +30,7 @@ class TaskTableViewController: UITableViewController {
         
         cell.labelDescription.text = task.description
         cell.labelCategory.text = task.category.name
+        cell.labelCategory.textColor = .blue
         cell.categoryView.backgroundColor = task.category.color
         cell.labelData.text = dateFormat.string(from: task.date)
         
