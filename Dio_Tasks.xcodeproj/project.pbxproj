@@ -22,6 +22,7 @@
 		997E639425E57EBE000EAAB8 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E639325E57EBE000EAAB8 /* DescriptionTableViewCell.swift */; };
 		997E639925E57ED6000EAAB8 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E639825E57ED6000EAAB8 /* CategoryTableViewCell.swift */; };
 		997E639E25E57EF5000EAAB8 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E639D25E57EF5000EAAB8 /* DateTableViewCell.swift */; };
+		99912FC526361C1200C0AA6A /* CreateTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99912FC426361C1200C0AA6A /* CreateTaskTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		997E639325E57EBE000EAAB8 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		997E639825E57ED6000EAAB8 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		997E639D25E57EF5000EAAB8 /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		99912FC426361C1200C0AA6A /* CreateTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			children = (
 				997B514F25E2F1E300255C75 /* Cells */,
 				997B513A25E2E56200255C75 /* TaskTableViewController.swift */,
+				99912FC426361C1200C0AA6A /* CreateTaskTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				997B50F525E2B15500255C75 /* AppDelegate.swift in Sources */,
 				997B50F725E2B15500255C75 /* SceneDelegate.swift in Sources */,
 				997E639E25E57EF5000EAAB8 /* DateTableViewCell.swift in Sources */,
+				99912FC526361C1200C0AA6A /* CreateTaskTableViewController.swift in Sources */,
 				997B514025E2E95000255C75 /* Task.swift in Sources */,
 				997B50FF25E2B15500255C75 /* Dio_Tasks.xcdatamodeld in Sources */,
 				997B514525E2EB1B00255C75 /* Category.swift in Sources */,
