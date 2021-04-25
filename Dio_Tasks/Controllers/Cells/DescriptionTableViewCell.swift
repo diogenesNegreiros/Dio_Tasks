@@ -2,6 +2,7 @@ import UIKit
 
 class DescriptionTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var taskDescriptionTextField: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
     }

@@ -2,6 +2,7 @@ import UIKit
 
 class DateTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var datetextField: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
