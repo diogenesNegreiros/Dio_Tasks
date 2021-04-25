@@ -1,6 +1,9 @@
 import UIKit
 
 class CreateTaskTableViewController: UITableViewController {
+    @IBAction func saveTask(_ sender: Any) {
+        print("task saved!")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
