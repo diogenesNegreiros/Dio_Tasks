@@ -164,6 +164,9 @@
                                         <constraint firstItem="9ge-oQ-irj" firstAttribute="top" secondItem="dGn-py-gTg" secondAttribute="topMargin" constant="2" id="XYW-nh-SCp"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="I3x-OQ-iFg" kind="show" id="R40-dS-Cpe"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="dateCell" rowHeight="60.5" id="Vav-Qa-a6i" customClass="DateTableViewCell" customModule="Dio_Tasks" customModuleProvider="target">
                                 <rect key="frame" x="16" y="176" width="288" height="60.5"/>
@@ -209,6 +212,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5FQ-P6-gLj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1241.25" y="110.91549295774648"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="u56-2T-ifp">
+            <objects>
+                <tableViewController id="I3x-OQ-iFg" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="a19-Vr-0aT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="chooseCategoryCell" textLabel="pMm-Dh-zvV" style="IBUITableViewCellStyleDefault" id="4ZU-AR-Tgn">
+                                <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4ZU-AR-Tgn" id="2vI-5c-2FY">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pMm-Dh-zvV">
+                                            <rect key="frame" x="16" y="0.0" width="288" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="I3x-OQ-iFg" id="aht-0F-6EO"/>
+                            <outlet property="delegate" destination="I3x-OQ-iFg" id="aE7-ke-GjC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="13m-5c-ceT"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NK8-l4-Vmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wpn-mI-cVm">

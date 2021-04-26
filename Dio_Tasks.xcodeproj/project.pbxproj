@@ -23,6 +23,8 @@
 		997E639925E57ED6000EAAB8 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E639825E57ED6000EAAB8 /* CategoryTableViewCell.swift */; };
 		997E639E25E57EF5000EAAB8 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E639D25E57EF5000EAAB8 /* DateTableViewCell.swift */; };
 		99912FC526361C1200C0AA6A /* CreateTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99912FC426361C1200C0AA6A /* CreateTaskTableViewController.swift */; };
+		99912FCA2636519600C0AA6A /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99912FC92636519600C0AA6A /* CategoryTableViewController.swift */; };
+		99912FD02636531800C0AA6A /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99912FCF2636531800C0AA6A /* CategoryRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		997E639825E57ED6000EAAB8 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		997E639D25E57EF5000EAAB8 /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
 		99912FC426361C1200C0AA6A /* CreateTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskTableViewController.swift; sourceTree = "<group>"; };
+		99912FC92636519600C0AA6A /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		99912FCF2636531800C0AA6A /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		997B50F325E2B15500255C75 /* Dio_Tasks */ = {
 			isa = PBXGroup;
 			children = (
+				99912FCE263652D900C0AA6A /* Repositories */,
 				997B513925E2E51100255C75 /* Controllers */,
 				997B512D25E2BF1900255C75 /* Model */,
 				997B50F425E2B15500255C75 /* AppDelegate.swift */,
@@ -161,6 +166,7 @@
 				997B514F25E2F1E300255C75 /* Cells */,
 				997B513A25E2E56200255C75 /* TaskTableViewController.swift */,
 				99912FC426361C1200C0AA6A /* CreateTaskTableViewController.swift */,
+				99912FC92636519600C0AA6A /* CategoryTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -174,6 +180,14 @@
 				997E639D25E57EF5000EAAB8 /* DateTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		99912FCE263652D900C0AA6A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				99912FCF2636531800C0AA6A /* CategoryRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,12 +325,14 @@
 				997B513B25E2E56200255C75 /* TaskTableViewController.swift in Sources */,
 				997B50F525E2B15500255C75 /* AppDelegate.swift in Sources */,
 				997B50F725E2B15500255C75 /* SceneDelegate.swift in Sources */,
+				99912FD02636531800C0AA6A /* CategoryRepository.swift in Sources */,
 				997E639E25E57EF5000EAAB8 /* DateTableViewCell.swift in Sources */,
 				99912FC526361C1200C0AA6A /* CreateTaskTableViewController.swift in Sources */,
 				997B514025E2E95000255C75 /* Task.swift in Sources */,
 				997B50FF25E2B15500255C75 /* Dio_Tasks.xcdatamodeld in Sources */,
 				997B514525E2EB1B00255C75 /* Category.swift in Sources */,
 				997E639925E57ED6000EAAB8 /* CategoryTableViewCell.swift in Sources */,
+				99912FCA2636519600C0AA6A /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
