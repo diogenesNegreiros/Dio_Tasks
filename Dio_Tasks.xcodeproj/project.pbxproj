@@ -22,6 +22,7 @@
 		997E639425E57EBE000EAAB8 /* DescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E639325E57EBE000EAAB8 /* DescriptionTableViewCell.swift */; };
 		997E639925E57ED6000EAAB8 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E639825E57ED6000EAAB8 /* CategoryTableViewCell.swift */; };
 		997E639E25E57EF5000EAAB8 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997E639D25E57EF5000EAAB8 /* DateTableViewCell.swift */; };
+		9983EC9F2636F40B0000DFD9 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9983EC9E2636F40B0000DFD9 /* TaskRepository.swift */; };
 		99912FC526361C1200C0AA6A /* CreateTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99912FC426361C1200C0AA6A /* CreateTaskTableViewController.swift */; };
 		99912FCA2636519600C0AA6A /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99912FC92636519600C0AA6A /* CategoryTableViewController.swift */; };
 		99912FD02636531800C0AA6A /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99912FCF2636531800C0AA6A /* CategoryRepository.swift */; };
@@ -66,6 +67,7 @@
 		997E639325E57EBE000EAAB8 /* DescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		997E639825E57ED6000EAAB8 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		997E639D25E57EF5000EAAB8 /* DateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		9983EC9E2636F40B0000DFD9 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		99912FC426361C1200C0AA6A /* CreateTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskTableViewController.swift; sourceTree = "<group>"; };
 		99912FC92636519600C0AA6A /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		99912FCF2636531800C0AA6A /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				99912FCF2636531800C0AA6A /* CategoryRepository.swift */,
+				9983EC9E2636F40B0000DFD9 /* TaskRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				997B50F525E2B15500255C75 /* AppDelegate.swift in Sources */,
 				997B50F725E2B15500255C75 /* SceneDelegate.swift in Sources */,
 				99912FD02636531800C0AA6A /* CategoryRepository.swift in Sources */,
+				9983EC9F2636F40B0000DFD9 /* TaskRepository.swift in Sources */,
 				997E639E25E57EF5000EAAB8 /* DateTableViewCell.swift in Sources */,
 				99912FC526361C1200C0AA6A /* CreateTaskTableViewController.swift in Sources */,
 				997B514025E2E95000255C75 /* Task.swift in Sources */,

@@ -5,5 +5,5 @@ struct Task {
     var name = ""
     var date = Date()
     var description = ""
-    var category = Category(name: "Marketing", color: .black)
+    var category = Category(name: "Work", color: .green)
 }

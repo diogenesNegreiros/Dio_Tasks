@@ -4,7 +4,7 @@ let marketingCategory = Category(name: "Marketing", color: UIColor.green)
 let comprasCategory = Category(name: "Compras", color: UIColor.blue)
 
 let tasks: [Task] = [
-    Task( name: "Publicar no site!", date: Date(), description: "Resultado dos torneios de xadrez da FEXERJ e da CBX realizados no mês de janeiro.", category: marketingCategory),
+    Task( name: "Publicar no site!", date: Date(), description: "Resultado dos torneios de xadrez da FEXERJ e da CBX realizados no mês de janeiro jsdhshd shdsdhd shdhshshh sdggdgsgh gsgdgsh dgdggdhshg sgd dgsd shdgsd shsgdnegreiros.", category: marketingCategory),
     Task( name: "Ir ao mercado!", date: Date(), description: "Comprar legumes", category: comprasCategory)
 ]
 

@@ -147,7 +147,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="261" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ge-oQ-irj">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ge-oQ-irj">
                                             <rect key="frame" x="16" y="13" width="227" height="34"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="34" id="x9B-kX-fqu"/>
@@ -165,7 +165,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="I3x-OQ-iFg" kind="show" id="R40-dS-Cpe"/>
+                                    <segue destination="I3x-OQ-iFg" kind="show" identifier="ToCategoryTableViewController" id="R40-dS-Cpe"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="dateCell" rowHeight="60.5" id="Vav-Qa-a6i" customClass="DateTableViewCell" customModule="Dio_Tasks" customModuleProvider="target">
@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="1241.25" y="110.91549295774648"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Category Table View Controller-->
         <scene sceneID="u56-2T-ifp">
             <objects>
-                <tableViewController id="I3x-OQ-iFg" sceneMemberID="viewController">
+                <tableViewController id="I3x-OQ-iFg" customClass="CategoryTableViewController" customModule="Dio_Tasks" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="a19-Vr-0aT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,7 +249,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NK8-l4-Vmd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2021" y="138"/>
+            <point key="canvasLocation" x="2031" y="111"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wpn-mI-cVm">

@@ -2,8 +2,9 @@ import UIKit
 
 class CreateTaskTableViewController: UITableViewController, UITextFieldDelegate {
     
-    var datePicker: UIDatePicker = UIDatePicker()
+    var datePicker = UIDatePicker()
     var selectedIndexPath: IndexPath?
+    var task = Task()
     var dateFormatter = DateFormatter()
     
     override func viewDidLoad() {
@@ -41,12 +42,23 @@ class CreateTaskTableViewController: UITableViewController, UITextFieldDelegate 
             }
         }
         self.view.endEditing(true)
+        self.task.date = datePicker.date
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         let cell = textField.superview?.superview as? DateTableViewCell
         if let cellDate = cell {
             self.selectedIndexPath = tableView.indexPath(for: cellDate)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ToCategoryTableViewController" {
+            let categoriesController = segue.destination as! CategoryTableViewController
+            categoriesController.choosenCategory = { category in
+                self.task.category = category
+                self.tableView.reloadData()
+            }
         }
     }
     
@@ -80,6 +92,7 @@ class CreateTaskTableViewController: UITableViewController, UITextFieldDelegate 
         
         if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath) as! CategoryTableViewCell
+            cell.textLabel?.text = self.task.category.name
             return cell
         }
         
