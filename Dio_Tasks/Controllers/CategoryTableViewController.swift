@@ -4,12 +4,11 @@ class CategoryTableViewController: UITableViewController {
     
     let categories = CategoryRepository.getCategories()
     var choosenCategory: ((Category) -> Void)?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
+    
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -24,9 +23,8 @@ class CategoryTableViewController: UITableViewController {
         cell.textLabel?.text = category.name
         return cell
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categories.count
     }
-
 }

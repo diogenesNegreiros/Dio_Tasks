@@ -1,17 +1,20 @@
 import UIKit
 
-let marketingCategory = Category(name: "Marketing", color: UIColor.green)
-let comprasCategory = Category(name: "Compras", color: UIColor.blue)
-
-let tasks: [Task] = [
-    Task( name: "Publicar no site!", date: Date(), description: "Resultado dos torneios de xadrez da FEXERJ e da CBX realizados no mês de janeiro jsdhshd shdsdhd shdhshshh sdggdgsgh gsgdgsh dgdggdhshg sgd dgsd shdgsd shsgdnegreiros.", category: marketingCategory),
-    Task( name: "Ir ao mercado!", date: Date(), description: "Comprar legumes", category: comprasCategory)
-]
-
 class TaskTableViewController: UITableViewController {
+    
+    private var tasks: [Task] = []
+    
+    private var dateFormatter = DateFormatter()
+    private var taskRepository = TaskRepository.instance
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        tasks = TaskRepository.instance.getTasks()
+        tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
