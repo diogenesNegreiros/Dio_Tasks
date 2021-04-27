@@ -38,7 +38,7 @@ class CreateTaskTableViewController: UITableViewController {
     
     @objc func datePickerClose(){
         
-   if let indexPath = self.selectedIndexPath {
+        if let indexPath = self.selectedIndexPath {
             let cell = tableView.cellForRow(at: indexPath) as? DateTableViewCell
             
             if let dateCell = cell {
@@ -107,14 +107,15 @@ class CreateTaskTableViewController: UITableViewController {
 extension CreateTaskTableViewController: UITextFieldDelegate {
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        self.task.description = textField.text ?? ""
-    }
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-  
-        let cell = textField.superview?.superview as? DateTableViewCell
+        
+        let cell = textField.superview?.superview as? UITableViewCell
         if let dateCell = cell {
             self.selectedIndexPath = tableView.indexPath(for: dateCell)
+            let selectedSection = tableView.indexPath(for: dateCell)?.section ?? 0
+            
+            if selectedSection == 0 {
+                self.task.description = textField.text ?? ""
+            }
         }
     }
 }
